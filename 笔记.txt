@@ -33,7 +33,7 @@ npm start
 
 用ant framework，npm install antd --save
 在src里创components和containers
-在containers里创Layout.js 粘贴ant里拷贝的layout。结果是export CustomLayout。
+在containers里创Layout.js 粘贴ant design里拷贝的layout。结果是export CustomLayout。
 在App.js里import这个CustomLayout
 再搞一个ArticleList 的container
 
