@@ -1,0 +1,45 @@
+mkdir djreact
+cd djreact
+mkdir frontend
+mkdir backend
+virtualenv env
+source 'env/Scripts/activate'
+pip install django
+pip install djangorestframework
+django-admin startproject djreact
+
+把backen\djreact 改名为src
+在backend里加.vscode设置（automation panda）
+pip install pep8
+pip install autopep8
+pip install pylint
+
+python manage.py startapp articles
+在install_app里加入'articles', 'rest_framework',
+加rest url path，加rest default setting
+
+写models，retister admin
+在article app 里用rest api
+创一个api文档,1.serilizers;2.views;3.urls
+
+
+弄好rest api，接下来去frontend
+creat-react-app 如果没安装，google creat-react-app，Facebook github里有
+npx create-react-app gui
+cd gui
+npm start
+
+删掉一些东西，logo
+
+用ant framework，npm install antd --save
+在src里创components和containers
+在containers里创Layout.js 粘贴ant里拷贝的layout。结果是export CustomLayout。
+在App.js里import这个CustomLayout
+再搞一个ArticleList 的container
+
+要render自己后端的数据，需要axios， npm install axios --save
+axios是一个像Ajax的包，可以用来make request to post or get from servers
+axios用在前端的view里
+前端articles要调用后端http://127.0.0.1:8000/api/，rest的数据，需要后端能够接收header，则需要安装django-cors-headers
+
+接下来，让article detail也能显示，需要安装 npm install --save react-router-dom，这个包的作用是在application内部redirecting
