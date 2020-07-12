@@ -8,6 +8,10 @@ pip install django
 pip install djangorestframework
 django-admin startproject djreact
 
+git add .
+git commit -m ""
+git push -u origin master
+
 把backen\djreact 改名为src
 在backend里加.vscode设置（automation panda）
 pip install pep8
