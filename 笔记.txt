@@ -1,7 +1,3 @@
-mkdir djreact
-cd djreact
-mkdir frontend
-mkdir backend
 virtualenv env
 source 'env/Scripts/activate'
 pip install django
